@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galerie photo du Bénin</title>
+  <meta name="description" content="Une galerie photo interactive, utilisable à la souris et au clavier.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/menu.js"></script>
+  <script src="js/galerie.js"></script>
+</head>
+
+<body onload="addTabFocus()">
+  <a href="#contenu" class="skip">Passer au contenu principal</a>
+
+  <header id="haut">
+    <nav class="nav" aria-label="Menu principal">
+      <span class="logo"><img src="images/drapeau-benin.svg" width="45" height="30" alt=""> Bénin</span>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="barres" aria-hidden="true"><span></span><span></span><span></span></span> Menu
+      </button>
+      <ul id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="nature.html">Nature</a></li>
+        <li><a href="galerie.html" aria-current="page">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <div class="banniere">
+      <h1>Galerie photo</h1>
+      <p>Passez la souris sur une photo, ou utilisez la touche Tab pour aller d'une photo à l'autre.</p>
+    </div>
+
+    <div class="contenu">
+      <div id="image" aria-live="polite">Survolez une photo ci-dessous pour l'afficher ici.</div>
+
+      <div class="miniatures">
+        <img class="preview" src="images/dantokpa.jpg" width="960" height="720" alt="Une avenue de Cotonou près du marché Dantokpa"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/mosquee-porto-novo.jpg" width="960" height="720" alt="La grande mosquée de Porto-Novo"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/porte-non-retour.jpg" width="960" height="540" alt="La Porte du Non-Retour à Ouidah"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/temple-pythons.jpg" width="960" height="746" alt="Le Temple des Pythons à Ouidah"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/abomey.jpg" width="960" height="720" alt="Les palais royaux d'Abomey"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/ganvie.jpg" width="960" height="505" alt="Le village de Ganvié sur le lac Nokoué"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/pendjari.jpg" width="960" height="541" alt="Des éléphants dans la Pendjari"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" src="images/kota.jpg" width="960" height="640" alt="Les chutes de Kota"
+          onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+      </div>
+
+      <section id="credits" class="credits">
+        <h2>Crédits photos</h2>
+        <p>Toutes les photos viennent de <a href="https://commons.wikimedia.org/">Wikimedia Commons</a> :</p>
+        <ul>
+          <li><a href="https://commons.wikimedia.org/wiki/File:March%C3%A9_Dantokpa_1.jpg">Marché Dantokpa</a>, Alacoolwiki, <a href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC BY 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Grande_Mosqu%C3%A9e_de_Porto-Novo_au_B%C3%A9nin_01.jpg">Grande mosquée de Porto-Novo</a>, Gildaskiki, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Porte_du_non-retour_au_Benin.jpg">Porte du Non-Retour</a>, Borisghost, <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.fr">CC0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_du_Temple_des_Pythons_%28Ouidah%29.jpg">Temple des Pythons</a>, Ji-Elle, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Royal_Palaces_of_Abomey-133470.jpg">Palais royaux d'Abomey</a>, Karalyn Monteil, <a href="https://creativecommons.org/licenses/by-sa/3.0/igo/deed.fr">CC BY-SA 3.0 IGO</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:The_village_of_Ganvi%C3%A9_on_Lake_Nokou%C3%A9.jpg">Village de Ganvié</a>, Ondřej Havelka, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Ganvie2.jpg">Cases de Ganvié</a>, Manu25, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr">CC BY-SA 3.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Elephants_Pendjari_National_Park.jpg">Éléphants de la Pendjari</a>, Marc Auer, <a href="https://creativecommons.org/licenses/by/2.0/deed.fr">CC BY 2.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Chutes_de_Kota_%281%29.jpg">Chutes de Kota</a>, Ji-Elle, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Plage_de_Grand-Popo_%281%29.jpg">Grand-Popo</a>, Ji-Elle, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/File:Bouche_du_Roi_in_Grand_Popo_Benin.jpg">Bouche du Roy</a>, Kulttuurinavigaattori, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr">CC BY-SA 4.0</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Site réalisé par Emmanuel Kakpo · Projet de synthèse Web Design for Everybody ·
+      <a href="galerie.html#credits">Crédits photos</a></p>
+    <p><a href="#haut">Retour en haut</a></p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Découvrir le Bénin</title>
+  <meta name="description" content="Un petit tour du Bénin : son histoire, sa nature et ses paysages en photos.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <a href="#contenu" class="skip">Passer au contenu principal</a>
+
+  <header id="haut">
+    <nav class="nav" aria-label="Menu principal">
+      <span class="logo"><img src="images/drapeau-benin.svg" width="45" height="30" alt=""> Bénin</span>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="barres" aria-hidden="true"><span></span><span></span><span></span></span> Menu
+      </button>
+      <ul id="menu">
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="nature.html">Nature</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <h1>Découvrir le Bénin</h1>
+      <p>Un petit tour d'un pays d'Afrique de l'Ouest plein d'histoire et de paysages.</p>
+      <a href="patrimoine.html" class="bouton">Commencer la visite</a>
+    </section>
+
+    <div class="contenu">
+      <section>
+        <h2>Bienvenue</h2>
+        <p>Le Bénin se trouve en Afrique de l'Ouest, entre le Togo et le Nigeria, avec le Burkina Faso et le Niger au
+          nord. Au sud, il s'ouvre sur l'océan Atlantique par une côte de sable bordée de cocotiers.</p>
+        <p>Sa capitale officielle est Porto-Novo, mais c'est à Cotonou que se trouvent le gouvernement et la plus
+          grande partie de l'activité économique. Dans les rues, les zémidjans, les taxis-motos, sont partout.</p>
+      </section>
+
+      <section>
+        <h2>Le Bénin en bref</h2>
+        <ul class="infos">
+          <li><strong>Capitale</strong> Porto-Novo</li>
+          <li><strong>Plus grande ville</strong> Cotonou</li>
+          <li><strong>Langue officielle</strong> Français</li>
+          <li><strong>Monnaie</strong> Franc CFA</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Au programme</h2>
+        <div class="cartes">
+          <article class="carte">
+            <img src="images/abomey.jpg" width="960" height="720"
+              alt="Un bâtiment des palais royaux d'Abomey, aux murs de terre rouge">
+            <h3><a href="patrimoine.html">Histoire et patrimoine</a></h3>
+            <p>Les palais d'Abomey, la mémoire de Ouidah et les maisons de Porto-Novo.</p>
+          </article>
+          <article class="carte">
+            <img src="images/pendjari.jpg" width="960" height="541"
+              alt="Un groupe d'éléphants dans la savane du parc de la Pendjari">
+            <h3><a href="nature.html">Nature et paysages</a></h3>
+            <p>Le lac Nokoué, la savane du nord, les chutes de Kota et la côte.</p>
+          </article>
+          <article class="carte">
+            <img src="images/ganvie-pirogues.jpg" width="960" height="640"
+              alt="Des cases au toit de chaume construites sur l'eau à Ganvié">
+            <h3><a href="galerie.html">Galerie photo</a></h3>
+            <p>Toutes les photos du site, à parcourir à la souris ou au clavier.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>Site réalisé par Emmanuel Kakpo · Projet de synthèse Web Design for Everybody ·
+      <a href="galerie.html#credits">Crédits photos</a></p>
+    <p><a href="#haut">Retour en haut</a></p>
+  </footer>
+</body>
+
+</html>
